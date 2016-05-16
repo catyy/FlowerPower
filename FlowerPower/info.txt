@@ -1,0 +1,23 @@
+Stock:
+
+Product in Stock Net Sales Value - by Product
+Table: code, product, group, available, layaway, unit, Net Sales Price, Net Sales Value
+Requests: getProducts, getProductStock
+
+
+TransferInOutValue:
+
+Transfer In Value Set a specific date range for the total retail dollar amount of inventory transferred
+Transfer Out Value Set a specific date range for the total retail dollar amount of inventory transferred
+Table: Supplier, Code, Product,	Net Sales Price, Amount, Total, Net Sales Price, Date, Number, Notes, From/To
+Requests: getInventoryTransfers, getProducts
+
+
+OnOrder:
+
+The retail value of what is on order (not yet recv’d) for a location
+filtrid: type = PRCORDER ja status = READY (ehk siis ainult kinnitatud ostutellimused ja ainult need, mis ei ole osaliselt ega täielikult täidetud)
+Tabel: Supplier, code, name, Purchased quantity, Net Sales Price, Total Net Sales Value
+Requests: getpurchasedocuments
+
+
