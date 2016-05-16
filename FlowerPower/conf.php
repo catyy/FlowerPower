@@ -7,9 +7,9 @@ include("EAPI.class.php");
 // Initialise class
 $api = new EAPI();
 
-$api->clientCode = "338589";
-$api->username = "support";
-$api->password = "Nm1ev8mSN0w4j6WD";
+$api->clientCode = "";
+$api->username = "";
+$api->password = "";
 
 
 /*
@@ -23,7 +23,7 @@ if (isset($_GET['clientCode'])) {
 }else{
     $api->clientCode = $_SESSION['clientCode'];
     $sessionKey = $_SESSION['apiSessionKey'] ;
-    //?apiSessionKey=WRfn22938c0f79e7ddf5a56ff53a000979a638103627&clientCode=338589
+  
 
 }
 */
